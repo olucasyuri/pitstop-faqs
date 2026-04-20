@@ -291,7 +291,6 @@ function renderGrid() {
 
 function cardHTML(f, i) {
   const delay = Math.min(i * 0.04, 0.4);
-  const hasLink = f.link && f.link.trim() !== "";
   return `
   <div class="faq-card ${barClass(f.cat)}" style="animation-delay:${delay}s">
     <div class="card-top">
@@ -307,10 +306,6 @@ function cardHTML(f, i) {
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         Copiar nº ${f.num}
       </button>
-      ${hasLink ? `<a class="btn-open" href="${f.link}" target="_blank" rel="noopener">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        Abrir
-      </a>` : ""}
     </div>
   </div>`;
 }
