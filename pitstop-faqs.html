@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base de FAQs — PIT STOP</title>
+<link rel="stylesheet" href="pitstop-faqs.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="imagens/logo.png" alt="Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-sector">Setor PIT STOP</span>
+        <span class="logo-title">Base de <span>FAQs</span></span>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Buscar por número ou nome do FAQ…" autocomplete="off">
+    </div>
+
+    <div class="dropdown-wrap" id="dropdownWrap">
+      <button class="dropdown-trigger" id="dropdownTrigger" onclick="toggleDropdown()">
+        <span id="dropdownLabel">Todos</span>
+        <svg class="chevron" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <div class="dropdown-menu" id="dropdownMenu"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="stats-bar">
+    <div id="faqCount"></div>
+  </div>
+  <div id="faqGrid"></div>
+</main>
+
+<script src="pitstop-faqs.js"></script>
+</body>
+</html>
