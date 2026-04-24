@@ -110,6 +110,7 @@ const faqs = [
   { num: 8158, title: "PIT STOP - ATENDIMENTO FINANCEIRO - GERAÇÃO DE CHAVE PIX - BAIXA DE PARCELA", cat: "PIT STOP", cls: "Registro de Transferencia", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/8158" },
   { num: 7858, title: "PIT STOP - Solicitação de Folga/Troca de Horário", cat: "PIT STOP", cls: "Operacional PIT STOP", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/7858" },
   { num: 8159, title: "PIT STOP - Apoio Operacional PEV", cat: "PIT STOP", cls: "Operacional PIT STOP", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/8159" },
+  { num: 7463, title: "PIT STOP - Registro de Ligações", cat: "PIT STOP", cls: "Registro de Ligações", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/7463" },
 
   // CATÁLOGO DIGITAL
   { num: 8026, title: "CATALOGO DIGITAL: ANÁLISE", cat: "CATÁLOGO DIGITAL", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8026" },
