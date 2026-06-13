@@ -111,6 +111,10 @@ const faqs = [
   { num: 7858, title: "PIT STOP - Solicitação de Folga/Troca de Horário", cat: "PIT STOP", cls: "Operacional PIT STOP", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/7858" },
   { num: 8159, title: "PIT STOP - Apoio Operacional PEV", cat: "PIT STOP", cls: "Operacional PIT STOP", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/8159" },
   { num: 7463, title: "PIT STOP - Registro de Ligações", cat: "PIT STOP", cls: "Registro de Ligações", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/7463" },
+  { num: 9306, title: "PIT STOP - REGISTRO DE RECLAMAÇÃO SOBRE ATENDIMENTO ESPECÍFICO", cat: "PIT STOP", cls: "Registro de Reclamação", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9306" },
+  { num: 9307, title: "PIT STOP - CLIENTE COM OC JÁ EM ABERTO - REGISTRO DE LIGAÇÃO", cat: "PIT STOP", cls: "Registro de Ligações", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9307" },
+  { num: 9308, title: "PIT STOP - CLIENTE INTERESSADO EM NOVOS PRODUTOS - REGISTRO DE LIGAÇÃO", cat: "PIT STOP", cls: "Registro de Ligações", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9308" },
+  { num: 9309, title: "PIT STOP - AO ATENDER, A LIGAÇÃO CAIU - REGISTRO DE LIGAÇÃO", cat: "PIT STOP", cls: "Registro de Ligações", link: "https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9309" },
 
   // CATÁLOGO DIGITAL
   { num: 8026, title: "CATALOGO DIGITAL: ANÁLISE", cat: "CATÁLOGO DIGITAL", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8026" },
