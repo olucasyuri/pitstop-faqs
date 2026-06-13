@@ -194,10 +194,18 @@ const barClassMap = {
   "BACKUPCLOUD":        "bar-backup",
 };
 
-// ── Build category list ──
+// ── Build category list with counts ──
+const catCounts = {};
+faqs.forEach(f => { catCounts[f.cat] = (catCounts[f.cat] || 0) + 1; });
 const allCats = ["Todos", ...new Set(faqs.map(f => f.cat))];
 let activeFilter = "Todos";
 let searchTerm = "";
+let categoryFilterTerm = "";
+let compactView = localStorage.getItem("pitstop-compact") === "1";
+let recentCopies = [];
+try {
+  recentCopies = JSON.parse(localStorage.getItem("pitstop-recent") || "[]");
+} catch (e) { recentCopies = []; }
 
 function clsClass(cls) {
   const l = cls.toLowerCase();
@@ -214,12 +222,33 @@ function barClass(cat) {
 }
 
 function renderDropdown() {
-  const menu = document.getElementById("dropdownMenu");
-  menu.innerHTML = "";
-  allCats.forEach(cat => {
+  const items = document.getElementById("dropdownItems");
+  items.innerHTML = "";
+  const term = categoryFilterTerm.toLowerCase().trim();
+  const visibleCats = allCats.filter(cat => !term || cat.toLowerCase().includes(term));
+
+  if (visibleCats.length === 0) {
+    items.innerHTML = `<div class="dropdown-item" style="cursor:default; color:var(--muted);">Nenhuma categoria encontrada</div>`;
+    return;
+  }
+
+  visibleCats.forEach(cat => {
     const item = document.createElement("div");
     item.className = "dropdown-item" + (cat === activeFilter ? " active" : "");
-    item.textContent = cat;
+    const label = document.createElement("span");
+    label.textContent = cat;
+    item.appendChild(label);
+    if (cat !== "Todos") {
+      const badge = document.createElement("span");
+      badge.className = "dropdown-item-count";
+      badge.textContent = catCounts[cat] || 0;
+      item.appendChild(badge);
+    } else {
+      const badge = document.createElement("span");
+      badge.className = "dropdown-item-count";
+      badge.textContent = faqs.length;
+      item.appendChild(badge);
+    }
     item.onclick = () => {
       activeFilter = cat;
       document.getElementById("dropdownLabel").textContent = cat;
@@ -227,7 +256,7 @@ function renderDropdown() {
       renderDropdown();
       renderGrid();
     };
-    menu.appendChild(item);
+    items.appendChild(item);
   });
 }
 
@@ -238,6 +267,8 @@ function toggleDropdown() {
   if (isOpen) { closeDropdown(); } else {
     trigger.classList.add("open");
     menu.classList.add("open");
+    const searchBox = document.getElementById("dropdownSearch");
+    setTimeout(() => searchBox && searchBox.focus(), 50);
   }
 }
 
@@ -248,6 +279,63 @@ function closeDropdown() {
 
 document.addEventListener("click", e => {
   if (!document.getElementById("dropdownWrap").contains(e.target)) closeDropdown();
+});
+
+document.getElementById("dropdownSearch").addEventListener("input", e => {
+  categoryFilterTerm = e.target.value;
+  renderDropdown();
+});
+
+document.getElementById("dropdownSearch").addEventListener("click", e => {
+  e.stopPropagation();
+});
+
+// ── Atalho de teclado "/" para focar a busca ──
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && document.activeElement.tagName !== "INPUT") {
+    e.preventDefault();
+    document.getElementById("searchInput").focus();
+  }
+  if (e.key === "Escape" && document.activeElement.id === "searchInput") {
+    clearSearch();
+    document.activeElement.blur();
+  }
+});
+
+function clearSearch() {
+  searchTerm = "";
+  const input = document.getElementById("searchInput");
+  input.value = "";
+  document.getElementById("searchClear").classList.remove("visible");
+  renderGrid();
+  input.focus();
+}
+
+function clearAllFilters() {
+  activeFilter = "Todos";
+  document.getElementById("dropdownLabel").textContent = "Todos";
+  renderDropdown();
+  clearSearch();
+}
+
+// ── Toggle de visualização (grid / compacto) ──
+function applyViewMode() {
+  const grid = document.getElementById("faqGrid");
+  const toggle = document.getElementById("viewToggle");
+  if (compactView) {
+    grid.classList.add("compact");
+    toggle.classList.add("compact");
+  } else {
+    grid.classList.remove("compact");
+    toggle.classList.remove("compact");
+  }
+}
+
+document.getElementById("viewToggle").addEventListener("click", () => {
+  compactView = !compactView;
+  localStorage.setItem("pitstop-compact", compactView ? "1" : "0");
+  applyViewMode();
+  renderGrid();
 });
 
 function renderGrid() {
@@ -268,10 +356,18 @@ function renderGrid() {
   count.innerHTML = `<strong>${filtered.length}</strong> FAQ${filtered.length !== 1 ? 's' : ''} encontrado${filtered.length !== 1 ? 's' : ''}`;
 
   if (filtered.length === 0) {
+    const suggestions = allCats.slice(1, 6);
+    const chips = suggestions.map(cat =>
+      `<button class="empty-state-btn" onclick="quickFilterCategory('${cat.replace(/'/g, "\\'")}')">${cat}</button>`
+    ).join("");
     grid.innerHTML = `<div class="empty-state">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <h3>Nenhum FAQ encontrado</h3>
       <p>Tente ajustar a busca ou o filtro de categoria.</p>
+      <div class="empty-state-actions">
+        <button class="empty-state-btn" onclick="clearAllFilters()">Limpar filtros</button>
+        ${chips}
+      </div>
     </div>`;
     return;
   }
@@ -294,6 +390,13 @@ function renderGrid() {
   }
 }
 
+function quickFilterCategory(cat) {
+  activeFilter = cat;
+  document.getElementById("dropdownLabel").textContent = cat;
+  renderDropdown();
+  clearSearch();
+}
+
 function cardHTML(f, i) {
   const delay = Math.min(i * 0.04, 0.4);
   return `
@@ -302,7 +405,7 @@ function cardHTML(f, i) {
       <span class="faq-num">#${f.num}</span>
       <span class="faq-class-tag ${clsClass(f.cls)}">${f.cls}</span>
     </div>
-    <div class="faq-title">${f.title}</div>
+    <div class="faq-title" title="${f.title.replace(/"/g, '&quot;')}">${f.title}</div>
     <div class="faq-meta">
       <span class="faq-cat-tag">${f.cat}</span>
     </div>
@@ -315,6 +418,37 @@ function cardHTML(f, i) {
   </div>`;
 }
 
+// ── Histórico de cópias recentes ──
+function renderRecentCopies() {
+  const wrap = document.getElementById("recentCopies");
+  const list = document.getElementById("recentCopiesList");
+  if (recentCopies.length === 0) {
+    wrap.style.display = "none";
+    return;
+  }
+  wrap.style.display = "flex";
+  list.innerHTML = recentCopies.map(num =>
+    `<span class="recent-copy-chip" onclick="copyFromChip(this, ${num})">#${num}</span>`
+  ).join("");
+}
+
+function addRecentCopy(num) {
+  recentCopies = recentCopies.filter(n => n !== num);
+  recentCopies.unshift(num);
+  recentCopies = recentCopies.slice(0, 5);
+  localStorage.setItem("pitstop-recent", JSON.stringify(recentCopies));
+  renderRecentCopies();
+}
+
+function copyFromChip(chip, num) {
+  navigator.clipboard.writeText(String(num)).then(() => {
+    const original = chip.textContent;
+    chip.textContent = "Copiado!";
+    setTimeout(() => { chip.textContent = original; }, 1200);
+  });
+  addRecentCopy(num);
+}
+
 // ── Copia APENAS o número do FAQ ──
 function copyFaq(btn, num) {
   navigator.clipboard.writeText(String(num)).then(() => {
@@ -324,13 +458,19 @@ function copyFaq(btn, num) {
       btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copiar nº ${num}`;
       btn.classList.remove("copied");
     }, 2000);
+    addRecentCopy(num);
   });
 }
 
 document.getElementById("searchInput").addEventListener("input", e => {
   searchTerm = e.target.value;
+  document.getElementById("searchClear").classList.toggle("visible", searchTerm.length > 0);
   renderGrid();
 });
 
+document.getElementById("searchClear").addEventListener("click", clearSearch);
+
 renderDropdown();
+applyViewMode();
 renderGrid();
+renderRecentCopies();

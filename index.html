@@ -22,7 +22,8 @@
 
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Buscar por número ou nome do FAQ…" autocomplete="off">
+      <input type="text" id="searchInput" placeholder="Buscar por número ou nome do FAQ… (pressione /)" autocomplete="off">
+      <button class="search-clear" id="searchClear" title="Limpar busca" aria-label="Limpar busca">×</button>
     </div>
 
     <div class="dropdown-wrap" id="dropdownWrap">
@@ -32,17 +33,30 @@
           <polyline points="6 9 12 15 18 9"/>
         </svg>
       </button>
-      <div class="dropdown-menu" id="dropdownMenu"></div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <input type="text" class="dropdown-search" id="dropdownSearch" placeholder="Filtrar categorias..." autocomplete="off">
+        <div class="dropdown-items" id="dropdownItems"></div>
+      </div>
     </div>
+
+    <button class="view-toggle" id="viewToggle" title="Alternar visualização" aria-label="Alternar visualização">
+      <svg class="view-icon-grid" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <svg class="view-icon-list" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </header>
 
 <main>
+  <div id="recentCopies" class="recent-copies" style="display:none">
+    <span class="recent-copies-label">Copiados recentemente:</span>
+    <div class="recent-copies-list" id="recentCopiesList"></div>
+  </div>
   <div class="stats-bar">
     <div id="faqCount"></div>
   </div>
   <div id="faqGrid"></div>
 </main>
+
 
 <script src="pitstop-faqs.js"></script>
 </body>
