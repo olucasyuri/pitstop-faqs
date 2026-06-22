@@ -149,6 +149,161 @@ const faqs = [
 
   // BACKUPCLOUD
   { num: 6120, title: "BackupCloud: Como funciona?", cat: "BACKUPCLOUD", cls: "Análise/Instalação", link: "" },
+
+  // SOFTSHOP (novos)
+  { num: 316,  title: "SOFTSHOP NÃO ABRE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/316" },
+  { num: 4392, title: "SOFTSHOP - Sistema Lento (Mapa Mental)", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/4392" },
+  { num: 5923, title: "Como realizar Conciliação Bancaria?", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/5923" },
+  { num: 5988, title: "Softshop > Compras: Entrada de Nota Fiscal pelo XML", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/5988" },
+  { num: 8184, title: "SOFTSHOP > ANALISE > PROBLEMAS/DUVIDAS FISCAIS", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8184" },
+  { num: 8185, title: "SOFTSHOP > ANALISE > RELATORIO DIVERGENTE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8185" },
+  { num: 8186, title: "SOFTSHOP > TREINAMENTO/DUVIDA", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8186" },
+  { num: 8187, title: "SOFTSHOP > IMPLANTAÇÃO/INSTALAÇÃO", cat: "SOFTSHOP", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8187" },
+  { num: 8206, title: "CTE > ANALISE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8206" },
+  { num: 8207, title: "CTE > DUVIDA/TREINAMENTO", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8207" },
+  { num: 8215, title: "CTE > IMPLANTACAO", cat: "SOFTSHOP", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8215" },
+  { num: 8227, title: "SOFTSHOP > ANALISE > MDFE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8227" },
+  { num: 8228, title: "SOFTSHOP > DUVIDA > MDFE", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8228" },
+  { num: 8229, title: "SOFTSHOP > ANALISE > NFSE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8229" },
+  { num: 8230, title: "SOFTSHOP > DUVIDA > NFSE", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8230" },
+  { num: 8232, title: "SOFTSHOP > DUVIDA > NFE > DEVOLUCAO", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8232" },
+  { num: 8252, title: "SOFTSHOP > DUVIDA > CADASTROS", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8252" },
+  { num: 8253, title: "SOFTSHOP > DUVIDA > ALTERAR VENDA", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8253" },
+  { num: 8254, title: "SOFTSHOP > DUVIDA > CONTAS PAGAR/RECEBER", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8254" },
+  { num: 8255, title: "SOFTSHOP > DUVIDA > BACKUP", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8255" },
+  { num: 8257, title: "SOFTSHOP > DUVIDA > ORCAMENTO E DAV", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8257" },
+  { num: 8258, title: "SOFTSHOP > DUVIDA > CONFIGURAÇÕES DA EMPRESA", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8258" },
+  { num: 8259, title: "SOFTSHOP > DUVIDA > CONTROLE DE ESTOQUE", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8259" },
+  { num: 8260, title: "SOFTSHOP > DUVIDA > GESTOR DE PRECOS/PROMOCOES", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8260" },
+  { num: 8261, title: "SOFTSHOP > DUVIDA > INTEGRACOES", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8261" },
+  { num: 9275, title: "SOFTSHOP > DUVIDA > RELATÓRIOS", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9275" },
+  { num: 9276, title: "SOFTSHOP > ANALISE > NFE > ERROS ROTINAS EMISSAO", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9276" },
+  { num: 9277, title: "SOFTSHOP > ANALISE > NFE > DUPLICIDADE", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9277" },
+  { num: 9288, title: "SOFTSHOP > ANALISE > NFE > INFORMACOES FISCAIS", cat: "SOFTSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9288" },
+  { num: 9290, title: "SOFTSHOP > DUVIDA > CONFIGURACOES FISCAIS", cat: "SOFTSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9290" },
+
+  // SOFTCOMSHOP (novos)
+  { num: 8176, title: "SOFTCOMSHOP > ANALISE > CACHE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8176" },
+  { num: 8177, title: "SOFTCOMSHOP > ANALISE > INDISPONIBILIDADE SERVIDOR", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8177" },
+  { num: 8178, title: "SOFTCOMSHOP > ANALISE > MIGRAÇÃO URL", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8178" },
+  { num: 8179, title: "SOFTCOMSHOP > ANALISE > NAO ABRE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8179" },
+  { num: 8180, title: "SOFTCOMSHOP > ANALISE > RELATORIO DIVERGENTE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8180" },
+  { num: 8181, title: "SOFTCOMSHOP > ANALISE > ERROS DE OPERAÇÃO", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8181" },
+  { num: 8182, title: "SOFTCOMSHOP > TREINAMENTO/DUVIDA", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8182" },
+  { num: 8183, title: "SOFTCOMSHOP > IMPLANTAÇÃO/INSTALAÇÃO", cat: "SOFTCOMSHOP", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8183" },
+  { num: 8208, title: "SOFTCOMSHOP > ANALISE > MDFE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8208" },
+  { num: 8209, title: "SOFTCOMSHOP > DUVIDA > MDFE", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8209" },
+  { num: 8210, title: "SOFTCOMSHOP > CHECAR > DUVIDA/TREINAMENTO", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8210" },
+  { num: 8211, title: "SOFTCOMSHOP > CHECAR > ANALISE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8211" },
+  { num: 8212, title: "SOFTCOMSHOP > ANALISE > NFE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8212" },
+  { num: 8213, title: "SOFTCOMSHOP > DUVIDA > NFE", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8213" },
+  { num: 8214, title: "SOFTCOMSHOP > ANALISE > NFSE", cat: "SOFTCOMSHOP", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8214" },
+  { num: 8241, title: "SOFTCOMSHOP > DUVIDA > NFSE", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8241" },
+  { num: 8262, title: "SOFTCOMSHOP > DUVIDA > BOLETO", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8262" },
+  { num: 8263, title: "SOFTCOMSHOP > DUVIDA > CADASTROS", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8263" },
+  { num: 8264, title: "SOFTCOMSHOP > DUVIDA > CONFIGURAÇÕES DA EMPRESA", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8264" },
+  { num: 8265, title: "SOFTCOMSHOP > DUVIDA > CONFIGURACOES FISCAIS", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8265" },
+  { num: 8266, title: "SOFTCOMSHOP > DUVIDA > CONTAS PAGAR/RECEBER", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8266" },
+  { num: 8267, title: "SOFTCOMSHOP > DUVIDA > CONTROLE DE ESTOQUE", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8267" },
+  { num: 8268, title: "SOFTCOMSHOP > DUVIDA > GESTOR DE PRECOS/PROMOCOES", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8268" },
+  { num: 8269, title: "SOFTCOMSHOP > DUVIDA > INTEGRACOES", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8269" },
+  { num: 8270, title: "SOFTCOMSHOP > DUVIDA > NUVEM", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8270" },
+  { num: 8271, title: "SOFTCOMSHOP > DUVIDA > RELATORIOS", cat: "SOFTCOMSHOP", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8271" },
+
+  // PDV (novos)
+  { num: 8238, title: "PDV > ANALISE > CONTINGENCIA", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8238" },
+  { num: 8239, title: "PDV > ANALISE > BANCO DE DADOS OFFLINE", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8239" },
+  { num: 8240, title: "PDV > ANALISE > ERROS GERAIS", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8240" },
+  { num: 8247, title: "PDV > RESTAURANTE > ANALISE", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8247" },
+  { num: 8248, title: "PDV > RESTAURANTE > ANALISE > REFERENCIA DE OBJETO", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8248" },
+  { num: 9282, title: "PDV > ANALISE > ERRO AO FINALIZAR VENDA", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9282" },
+  { num: 9283, title: "PDV > ANALISE > REFERENCIA DE OBJETO", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9283" },
+  { num: 9291, title: "PDV > ANALISE > TEF > SCOPE", cat: "PDV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9291" },
+
+  // NFE (novos - Emissor NFe)
+  { num: 8235, title: "EMISSOR NFE > INSTALACAO/IMPLANTACAO", cat: "NFE", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8235" },
+  { num: 9278, title: "EMISSOR NFE > ANALISE > ERROS GERAIS DO EMISSOR", cat: "NFE", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9278" },
+  { num: 9279, title: "EMISSOR NFE > DUVIDA > CANCELAMENTO NFE", cat: "NFE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9279" },
+  { num: 9280, title: "EMISSOR NFE > DUVIDA > REIMPRESSAO NFE", cat: "NFE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9280" },
+  { num: 9281, title: "EMISSOR NFE > DUVIDA > CARTA DE CORRECAO", cat: "NFE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9281" },
+  { num: 9286, title: "EMISSOR NFE > DUVIDA > ROTINA DE PROCESSAMENTO", cat: "NFE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/9286" },
+
+  // PIX (novo)
+  { num: 8205, title: "PIX > IMPLANTAÇÃO", cat: "PIX", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8205" },
+
+  // BOLETOS (novo)
+  { num: 8236, title: "LINK DE PAGAMENTO", cat: "BOLETOS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8236" },
+
+  // CHATBOT (novos)
+  { num: 8188, title: "CHATBOT > TREINAMENTO", cat: "CHATBOT", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8188" },
+  { num: 8189, title: "CHATBOT > IMPLANTAÇÃO/INSTALAÇÃO", cat: "CHATBOT", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8189" },
+
+  // DRICA IA (novos)
+  { num: 7766, title: "DRICA IA > IMPLANTAÇÃO/INSTALAÇÃO", cat: "DRICA IA", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/7766" },
+  { num: 8190, title: "DRICA IA > TREINAMENTO", cat: "DRICA IA", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8190" },
+
+  // COLLECTOR (novos)
+  { num: 8191, title: "COLLECTOR > ANALISE", cat: "COLLECTOR", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8191" },
+  { num: 8192, title: "COLLECTOR > TREINAMENTO", cat: "COLLECTOR", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8192" },
+  { num: 8193, title: "COLLECTOR > IMPLANTAÇÃO/INSTALAÇÃO", cat: "COLLECTOR", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8193" },
+
+  // MARKETPLACE (novos)
+  { num: 8194, title: "MARKETPLACE > ANALISE", cat: "MARKETPLACE", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8194" },
+  { num: 8195, title: "MARKETPLACE > IMPLANTACAO/INSTALACAO", cat: "MARKETPLACE", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8195" },
+  { num: 8196, title: "MARKETPLACE > TREINAMENTO", cat: "MARKETPLACE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8196" },
+
+  // MEU CARRINHO (novos)
+  { num: 8197, title: "MEU CARRINHO > ANALISE", cat: "MEU CARRINHO", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8197" },
+  { num: 8198, title: "MEU CARRINHO > DUVIDA", cat: "MEU CARRINHO", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8198" },
+  { num: 8199, title: "MEU CARRINHO > IMPLANTACAO/INSTALACAO", cat: "MEU CARRINHO", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8199" },
+
+  // SOFTMOV (novos)
+  { num: 8200, title: "SOFTMOV > ANALISE", cat: "SOFTMOV", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8200" },
+  { num: 8201, title: "SOFTMOV > DUVIDA", cat: "SOFTMOV", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8201" },
+
+  // QUERO BÔNUS (novos)
+  { num: 8202, title: "QUERO BONUS > ANALISE", cat: "QUERO BÔNUS", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8202" },
+  { num: 8203, title: "QUERO BONUS > DUVIDA", cat: "QUERO BÔNUS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8203" },
+  { num: 8204, title: "QUERO BONUS > IMPLANTACAO/INSTALACAO", cat: "QUERO BÔNUS", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8204" },
+
+  // VENDA MAIS (novos)
+  { num: 8216, title: "VENDA MAIS > IMPLANTACAO/INSTALACAO", cat: "VENDA MAIS", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8216" },
+  { num: 8217, title: "VENDA MAIS > DUVIDA/TREINAMENTO", cat: "VENDA MAIS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8217" },
+  { num: 8218, title: "VENDA MAIS > ANALISE", cat: "VENDA MAIS", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8218" },
+
+  // VENDAS 360 (novos)
+  { num: 8219, title: "VENDAS 360 > ANALISE", cat: "VENDAS 360", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8219" },
+  { num: 8220, title: "VENDAS 360 > DUVIDA/TREINAMENTO", cat: "VENDAS 360", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8220" },
+  { num: 8221, title: "VENDAS 360 > IMPLANTACAO/INSTALACAO", cat: "VENDAS 360", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8221" },
+
+  // CATÁLOGO DIGITAL (novo)
+  { num: 8223, title: "CATALOGO DIGITAL: IMPLANTACAO/INSTALACAO", cat: "CATÁLOGO DIGITAL", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8223" },
+
+  // SMART (novos)
+  { num: 8224, title: "SMART > ANALISE", cat: "SMART", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8224" },
+  { num: 8225, title: "SMART > DUVIDA/TREINAMENTO", cat: "SMART", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8225" },
+  { num: 8226, title: "SMART > IMPLANTACAO/INSTALACAO", cat: "SMART", cls: "Implantação/Instalação", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8226" },
+
+  // INSTALAÇÃO (novos)
+  { num: 3865, title: "Infra: Substituição de Periféricos ou Equipamentos", cat: "INSTALAÇÃO", cls: "Análise/Erro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/3865" },
+  { num: 4393, title: "Envio de E-mail (Mapa Mental)", cat: "INSTALAÇÃO", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/4393" },
+
+  // SMOBILE (novo)
+  { num: 6589, title: "Ta na Mão - Instruções", cat: "SMOBILE", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/6589" },
+
+  // PROCESSO (novos - categoria nova)
+  { num: 2775, title: "PROCESSO > CLIENTE > CLIENTE RESOLVEU SOZINHO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/2775" },
+  { num: 8242, title: "PROCESSO > CLIENTE > CANCELAMENTO DE PRODUTOS SOFTCOM", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8242" },
+  { num: 8250, title: "PROCESSO > CLIENTE > ATENDIMENTO FINANCEIRO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8250" },
+  { num: 8272, title: "PROCESSO > CLIENTE > FALAR COM TECNICO ESPECIFICO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8272" },
+  { num: 8273, title: "PROCESSO > SOFTCOM > AGENDAMENTO EXTERNO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8273" },
+  { num: 8274, title: "PROCESSO > CLIENTE > CONT DO ATENDIMENTO ANTERIOR", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8274" },
+  { num: 8275, title: "PROCESSO > CLIENTE > OUVIDORIA", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8275" },
+
+  // SISTEMAS ESPECÍFICOS (novos - categoria nova)
+  { num: 8243, title: "SISTEMAS ESPECIFICOS > SOFTMOV", cat: "SISTEMAS ESPECÍFICOS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8243" },
+  { num: 8244, title: "SISTEMAS ESPECIFICOS > SOFTCLIN", cat: "SISTEMAS ESPECÍFICOS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8244" },
+  { num: 8245, title: "SISTEMAS ESPECIFICOS > PROACAD", cat: "SISTEMAS ESPECÍFICOS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8245" },
 ];
 
 // ── Mapa de classe CSS da barra lateral por categoria ──
@@ -192,6 +347,8 @@ const barClassMap = {
   "CHECAR":             "bar-checar",
   "CERTIFICADO DIGITAL":"bar-certdigital",
   "BACKUPCLOUD":        "bar-backup",
+  "PROCESSO":           "bar-processo",
+  "SISTEMAS ESPECÍFICOS": "bar-sistemas",
 };
 
 // ── Build category list with counts ──
@@ -212,7 +369,7 @@ function clsClass(cls) {
   if (l.includes("análise") || l.includes("erro") || l.includes("analise")) return "cls-analise";
   if (l.includes("treinamento") || l.includes("dúvida") || l.includes("duvida") || l.includes("liberação") || l.includes("liberacao")) return "cls-treinamento";
   if (l.includes("config") || l.includes("configuração")) return "cls-config";
-  if (l.includes("instalação") || l.includes("instalacao") || l.includes("instação")) return "cls-instalacao";
+  if (l.includes("instalação") || l.includes("instalacao") || l.includes("instação") || l.includes("implantação") || l.includes("implantacao")) return "cls-instalacao";
   if (l.includes("registro") || l.includes("operacional")) return "cls-operacional";
   return "cls-outros";
 }

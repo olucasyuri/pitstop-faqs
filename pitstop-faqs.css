@@ -722,6 +722,8 @@ main {
 .bar-checar      { --card-accent: #ff8c42; }
 .bar-certdigital { --card-accent: #c8a5ff; }
 .bar-backup      { --card-accent: #f5c400; }
+.bar-processo    { --card-accent: #ff8c69; }
+.bar-sistemas    { --card-accent: #7ec8e3; }
 .bar-default     { --card-accent: #4d4d66; }
 
 /* RESPONSIVE */
