@@ -297,7 +297,6 @@ const faqs = [
   { num: 8272, title: "PROCESSO > CLIENTE > FALAR COM TECNICO ESPECIFICO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8272" },
   { num: 8273, title: "PROCESSO > SOFTCOM > AGENDAMENTO EXTERNO", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8273" },
   { num: 8274, title: "PROCESSO > CLIENTE > CONT DO ATENDIMENTO ANTERIOR", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8274" },
-  { num: 8275, title: "PROCESSO > CLIENTE > OUVIDORIA", cat: "PROCESSO", cls: "Registro", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8275" },
 
   // SISTEMAS ESPECÍFICOS (novos - categoria nova)
   { num: 8243, title: "SISTEMAS ESPECIFICOS > SOFTMOV", cat: "SISTEMAS ESPECÍFICOS", cls: "Treinamento/Dúvida", link: "http://10.0.0.20/helptools2/public/core/promover/detalhe/id/8243" },
